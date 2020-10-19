@@ -111,6 +111,12 @@
     10. 删除分支
     删除远程分支: git push origin --delete 分支名
     删除本地分支: git branch -d 分支名
+
+    11. tag
+    查询所有tag：git tag
+    创建新的tag: git tag -a v1.0.0 -m "注释"
+    发布指定tag: git push origin v1.0.0
+    发布所有tag: git push origin --tags
     
     
     二、远程
