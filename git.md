@@ -151,6 +151,46 @@
     4)将SSH Key 添加到GitHub账户里
     将id_rsa.pub(公钥文件)里面的内容复制粘贴到GitHub 的 Settings 的 SSH Key文本框中
 
+
+##### git分支(branch)和git标签(tag)的区别
+  1. tag
+    标签是一个点，代表项目的某个里程碑
+    标签的位置是固定的，在给指定提交打好标签以后，它就固定于此位置。
+    标签适用于记录某个固定版本
+
+  2. branch 
+    分支是一个条线，有生命周期
+    分支的位置会不断变动的，随着分支的向前推移或者向后回滚，都在不断变化。
+    分支适用于功能开发、bug修复等操作
+
+
+##### git 分支管理
+  master
+    有质量保证的、可安全运行的分支
+    禁止直接代码提交，避免被污染，仅用于代码合并和归集，在这个分支上的代码应该永远是可用的、稳定的。
+    当需要拉一个特别的开发分支时，应该基于 master。
+
+
+  release
+    发布过程的分支
+      包括开发转测(实际上我们认为这里的测试集成测试)、测试和BugFix以及发布上线的过程，
+      当发布成功时要打一个发布beta Tag(如5.2.1-beta)，并将代码合并到 master 分支
+
+  dev
+    开发分支
+    开发小组有信心转测时，就将代码合并到 release 分支，并要求打一个alpha级的Tag(如5.2.0-alpha)
+    新功能开发分支在dev分支上拉新的对应分支进行开发迭代合并销毁
+
+  hotfix 
+    当出现线上Bug需要hotfix时，我们需要在上次上线的Tag处拉一个临时的 hotfix 分支进行修正
+    或者在未被其他开发迭代污染的release分支上直接hotfix上线并合并到master和develop，然后打一个新的Tag(如5.2.2-beta）
+
+  版本号v1.0.0
+
+##### git相关资料
+  http://roclinux.cn/?p=2129   (GIT分支管理是一门艺术)
+
+
 ##### git代码统计工具
 
 https://blog.csdn.net/qq_37023538/article/details/53930200 
@@ -161,3 +201,4 @@ https://blog.csdn.net/fengyuansu656/article/details/72771178
     (环境变量设置在gitbash里面无效的时候, 需要在python的安装目录下C:\Python27, 在gitbash里面执行下面命令行, 在输出结果路径查看报告)
     例如:
     python C:/Users/Administrator/Desktop/gitstats/gitstats.py C:/Users/Administrator/Desktop/web-manage C:/Users/Administrator/Desktop/gitReport
+    
