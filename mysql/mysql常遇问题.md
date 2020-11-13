@@ -43,7 +43,14 @@
     
     
 ##### mysql客户端软件
-    Navicat
+```
+    https://dbeaver.io/download
+    直接下载7.2.x版本的zip解压双击dbeaver.exe
+```
     
 
-    
+#### windows的mysql忘记密码重置密码
+```
+    https://blog.csdn.net/weixin_41688619/article/details/79879003
+```
+
