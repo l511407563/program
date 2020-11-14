@@ -678,9 +678,11 @@ year|1|1901|2155|只保存年
     约束的添加分类：
         列级约束：
             只支持默认、非空、主键、唯一
+            列级约束只能应用在一列上
 
         表级约束：
             只支持主键、唯一、外键
+            表级约束可以应用在多列上
 
     例：
         CREATE TABLE 表名(
@@ -749,10 +751,57 @@ year|1|1901|2155|只保存年
             一个事务一旦提交，则会永久的改变数据库的数据
 
     事务的使用步骤
+        隐式事务：事务没有明显的开启和结束的标记
+        比如insert、update、delete语句
+
+        显示事务：事务具有明显的开启和结束的标记
+        前提：必须先设置(insert、update、delete等语句)自动提交功能为禁用
+        禁用自动提交功能：set autocommit=0;
+
+        注意：在一些mysql客户端工具中，例如DBeaver客户端，执行事务需要开启 允许多条提交 "allowMultiQueries", 否则执行多条语句的时候会报错
+        编辑连接 ---> 连接设置 ---> 驱动属性 ---> allowMultiQueries 改为 true
+
+        步骤1：开启事务
+            set autocommit=0;
+            start transaction;(可选的)
+        步骤2：编写事务中的sql语句(select insert update delete)
+            语句1;
+            语句2;
+            ...
+        步骤3：结束事务
+            commit; 提交事务
+            rollback; 回滚事务
+        
 
     事务的并发问题
+        同时运行多个事务时，当这些事务访问数据库中相同的数据时，如果没有隔离，就会导致各种并发问题；
+        1.脏读(读取之后数据回滚)：对于两个事务T1，T2，T1读取了T2更新但是没有提交的数据，如果T2回滚了，T1读取的就是临时且无效的。
+        2.不可重复读(读取之后数据更新)：对于两个事务T1，T2，T1读取了一个字段，然后T2更新了该字段，之后，T1再次读取同一个字段，值就不同了。
+        3.幻读(读取之后数据新增)：对于两个事务T1，T2，T1从一个表中读取了一个字段，T2向表中插入新数据，T1再次读取同一个表，就会多出几行。
 
     事务的隔离级别
+                                        脏读                不可重复读              幻读
+        读未提交数据(read uncommitted)   可以                   可以                 可以 
+        读已提交数据(read committed)     不可以                 可以                 可以
+        可重复读(repeatable read)        不可以                 不可以               可以
+        串行化(serializable)             不可以                不可以                不可以
+
+    mysql的默认隔离级别：可重复读(repeatable read) 
+    orcle默认隔离级别：读已提交数据(read committed)
+
+    查看mysql的隔离级别
+        select @@tx_isolation;
+
+    设置mysql的隔离级别
+        set session|global transaction isolation level 隔离级别
+
+    设置回滚保存点
+    savepoint 节点名; 
+    回滚点后面执行的sql语句都回滚，回滚点前的sql语句无法回滚
+    例：
+    savepoint a; #这是保存点a
+    rollback to a; #回滚到保存点a
+
 ```
 
 #### <h3 id="five">五、视图</h3>
