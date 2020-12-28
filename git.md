@@ -202,3 +202,15 @@ https://blog.csdn.net/fengyuansu656/article/details/72771178
     例如:
     python C:/Users/Administrator/Desktop/gitstats/gitstats.py C:/Users/Administrator/Desktop/web-manage C:/Users/Administrator/Desktop/gitReport
     
+##### git同步远程已删除的分支和删除本地多余的分支
+```
+  查看本地分支和远程分支情况
+    git branch -a
+  查看本地分支和追踪情况
+    git remote show origin
+  删除本地分支
+    git branch -D 本地分支名
+  同步远程已删除分支
+    git remote prune origin
+  
+```
