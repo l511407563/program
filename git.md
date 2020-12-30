@@ -214,3 +214,8 @@ https://blog.csdn.net/fengyuansu656/article/details/72771178
     git remote prune origin
   
 ```
+
+##### git查看本地分支和远程分支的关联
+```
+  git branch -vv
+```

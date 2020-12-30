@@ -24,8 +24,8 @@
 |19 | [refs有什么用?](#what-is-the-use-of-refs) |
 |20 | [如何创建refs?](#how-to-create-refs)
 |21 | [什么是forward refs?](#what-are-forward-refs) |
-|22 | [Which is preferred option with in callback refs and findDOMNode()?](#which-is-preferred-option-with-in-callback-refs-and-finddomnode) |
-|23 | [Why are String Refs legacy?](#why-are-string-refs-legacy) |
+|22 | [callback refs 和 findDOMNode()哪个是首选方法??](#which-is-preferred-option-with-in-callback-refs-and-finddomnode) |
+|23 | [为什么String Refs是旧式的？](#why-are-string-refs-legacy) |
 |24 | [What is Virtual DOM?](#what-is-virtual-dom) |
 |25 | [How Virtual DOM works?](#how-virtual-dom-works) |
 |26 | [What is the difference between Shadow DOM and Virtual DOM?](#what-is-the-difference-between-shadow-dom-and-virtual-dom) |
@@ -813,11 +813,11 @@
 
    **[⬆ Back to Top](#table-of-contents)**
     
-22. ### Which is preferred option with in callback refs and findDOMNode()?
+22. ### callback refs 和 findDOMNode()哪个是首选方法??
 
-    It is preferred to use *callback refs* over `findDOMNode()` API. Because `findDOMNode()` prevents certain improvements in React in the future.
+    最好在`findDOMNode()`API上使用*callback refs*。因为`findDOMNode()`将来会阻止React的某些改进。
 
-    The **legacy** approach of using `findDOMNode`:
+    使用`findDOMNode`的“传统”方法：
 
     ```javascript
     class MyComponent extends Component {
@@ -831,7 +831,7 @@
     }
     ```
 
-    The recommended approach is:
+    推荐的方法是：
 
     ```javascript
     class MyComponent extends Component {
@@ -852,14 +852,14 @@
 
    **[⬆ Back to Top](#table-of-contents)**
     
-23. ### Why are String Refs legacy?
+23. ### 为什么String Refs是旧式的？
 
-    If you worked with React before, you might be familiar with an older API where the `ref` attribute is a string, like `ref={'textInput'}`, and the DOM node is accessed as `this.refs.textInput`. We advise against it because *string refs have below issues*, and are considered legacy. String refs were **removed in React v16**.
+    如果您以前使用过React，那么您可能会熟悉一个较旧的API，其中的ref属性是一个字符串，例如ref = {'textInput'}，并且DOM节点作为this.refs.textInput访问。 。我们建议您不要这样做，因为*字符串引用存在以下问题*，并且被认为是遗留问题。字符串引用在**v16中已删除**。
 
-    1. They *force React to keep track of currently executing component*. This is problematic because it makes react module stateful, and thus causes weird errors when react module is duplicated in the bundle.
-    2. They are *not composable* — if a library puts a ref on the passed child, the user can't put another ref on it. Callback refs are perfectly composable.
-    3. They *don't work with static analysis* like Flow. Flow can't guess the magic that framework does to make the string ref appear on `this.refs`, as well as its type (which could be different). Callback refs are friendlier to static analysis.
-    4. It doesn't work as most people would expect with the "render callback" pattern (e.g. <DataGrid renderRow={this.renderRow} />)
+    1. 它们*迫使React跟踪当前正在执行的组件*。这是有问题的，因为它使React模块成为有状态的，并因此在捆绑中复制React模块时引起奇怪的错误。
+    2. 它们是“不可组合的” —如果库在传递的子项上放置了引用，则用户无法在其上放置其他引用。callback ref完全可以组合。
+    3. 它们*不适用于Flow等静态分析*。 Flow不能猜测框架使字符串ref出现在this.refs上的魔力，以及它的类型（可能不同）。callback refs比静态分析更友好。
+    4. 不能像大多数人期望的那样使用“渲染回调”模式 (e.g. <DataGrid renderRow={this.renderRow} />)
        ```jsx harmony
        class MyComponent extends Component {
          renderRow = (index) => {
