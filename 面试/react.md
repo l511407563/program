@@ -103,33 +103,33 @@
 |98 | [如何使用React标签元素？](#how-to-use-react-label-element) |
 |99 | [如何合并多个内联样式对象？](#how-to-combine-multiple-inline-style-objects) |
 |100| [调整浏览器大小时如何重新渲染视图？](#how-to-re-render-the-view-when-the-browser-is-resized)
-|101| [What is the difference between setState and replaceState methods?](#what-is-the-difference-between-setstate-and-replacestate-methods) |
-|102| [How to listen to state changes?](#how-to-listen-to-state-changes) |
-|103| [What is the recommended approach of removing an array element in react state?](#what-is-the-recommended-approach-of-removing-an-array-element-in-react-state) |
-|104| [Is it possible to use React without rendering HTML?](#is-it-possible-to-use-react-without-rendering-html) |
-|105| [How to pretty print JSON with React?](#how-to-pretty-print-json-with-react) |
-|106| [Why you can't update props in React?](#why-you-cant-update-props-in-react) |
-|107| [How to focus an input element on page load?](#how-to-focus-an-input-element-on-page-load) |
-|108| [What are the possible ways of updating objects in state?](#what-are-the-possible-ways-of-updating-objects-in-state) |
-|110| [How can we find the version of React at runtime in the browser?](#how-can-we-find-the-version-of-react-at-runtime-in-the-browser) |
-|111| [What are the approaches to include polyfills in your create-react-app?](#what-are-the-approaches-to-include-polyfills-in-your-create-react-app) |
-|112| [How to use https instead of http in create-react-app?](#how-to-use-https-instead-of-http-in-create-react-app) |
-|113| [How to avoid using relative path imports in create-react-app?](#how-to-avoid-using-relative-path-imports-in-create-react-app) |
-|114| [How to add Google Analytics for react-router?](#how-to-add-google-analytics-for-react-router) |
-|115| [How to update a component every second?](#how-to-update-a-component-every-second) |
-|116| [How do you apply vendor prefixes to inline styles in React?](#how-do-you-apply-vendor-prefixes-to-inline-styles-in-react) |
-|117| [How to import and export components using react and ES6?](#how-to-import-and-export-components-using-react-and-es6) |
+|101| [setState()和replaceState()方法有什么区别](#what-is-the-difference-between-setstate-and-replacestate-methods) |
+|102| [如何聆状态变化？](#how-to-listen-to-state-changes) |
+|103| [建议在React状态下删除数组中元素的方法是什么？](#what-is-the-recommended-approach-of-removing-an-array-element-in-react-state) |
+|104| [是否可以在不渲染HTML的情况下使用React？](#is-it-possible-to-use-react-without-rendering-html) |
+|105| [如何使用React漂亮地打印JSON？](#how-to-pretty-print-json-with-react) |
+|106| [为什么您不能在React中更新道具？](#why-you-cant-update-props-in-react) |
+|107| [如何在页面加载时设置input为focus状态？](#how-to-focus-an-input-element-on-page-load) |
+|108| [有什么可能的方法来更新state对象？](#what-are-the-possible-ways-of-updating-objects-in-state) |
+|110| [我们如何在运行时在浏览器中找到React的版本？](#how-can-we-find-the-version-of-react-at-runtime-in-the-browser) |
+|111| [在您的`create-react-app`中包含polyfill的方法有哪些？](#what-are-the-approaches-to-include-polyfills-in-your-create-react-app) |
+|112| [如何在create-react-app中使用https代替http？](#how-to-use-https-instead-of-http-in-create-react-app) |
+|113| [如何避免在create-react-app中使用相对路径导入？](#how-to-avoid-using-relative-path-imports-in-create-react-app) |
+|114| [如何为 React Router添加Google Analytics ？](#how-to-add-google-analytics-for-react-router) |
+|115| [如何每秒更新一次组件？](#how-to-update-a-component-every-second) |
+|116| [如何在React中将供应商前缀应用于内联样式？](#how-do-you-apply-vendor-prefixes-to-inline-styles-in-react) |
+|117| [如何使用React和ES6导入和导出组件？](#how-to-import-and-export-components-using-react-and-es6) |
 |118| [React组件命名有什么例外？](#what-are-the-exceptions-on-react-component-naming) |
-|119| [Why is a component constructor called only once?](#why-is-a-component-constructor-called-only-once) |
-|120| [How to define constants in React?](#how-to-define-constants-in-react) |
-|121| [How to programmatically trigger click event in React?](#how-to-programmatically-trigger-click-event-in-react) |
-|122| [Is it possible to use async/await in plain React?](#is-it-possible-to-use-asyncawait-in-plain-react) |
-|123| [What are the common folder structures for React?](#what-are-the-common-folder-structures-for-react) |
-|124| [What are the popular packages for animation?](#what-are-the-popular-packages-for-animation) |
-|125| [What is the benefit of styles modules?](#what-is-the-benefit-of-styles-modules) |
-|126| [What are the popular React-specific linters?](#what-are-the-popular-react-specific-linters) |
-|127| [How to make AJAX call and In which component lifecycle methods should I make an AJAX call?](#how-to-make-ajax-call-and-in-which-component-lifecycle-methods-should-i-make-an-ajax-call) |
-|128| [What are render props?](#what-are-render-props) |
+|119| [为什么组件构造函数只调用一次？](#why-is-a-component-constructor-called-only-once) |
+|120| [如何在React中定义常量？](#how-to-define-constants-in-react) |
+|121| [如何在React中以编程方式触发click事件？](#how-to-programmatically-trigger-click-event-in-react) |
+|122| [是否可以在普通React中使用async / await？](#is-it-possible-to-use-asyncawait-in-plain-react) |
+|123| [React常用的文件夹结构是什么？](#what-are-the-common-folder-structures-for-react) |
+|124| [有哪些流行的动画软件包？](#what-are-the-popular-packages-for-animation) |
+|125| [styles modules的好处是什么？](#what-is-the-benefit-of-styles-modules) |
+|126| [什么是最受欢迎的React-specific linters？](#what-are-the-popular-react-specific-linters) |
+|127| [如何进行AJAX调用，应该在哪个组件生命周期方法中进行AJAX调用？](#how-to-make-ajax-call-and-in-which-component-lifecycle-methods-should-i-make-an-ajax-call) |
+|128| [什么是render props?](#what-are-render-props) |
 |   | **React 路由** |
 |129| [What is React Router?](#what-is-react-router) |
 |130| [How React Router is different from history library?](#how-react-router-is-different-from-history-library) |
@@ -2495,30 +2495,29 @@
 
    **[⬆ Back to Top](#table-of-contents)**
     
-101. ### What is the difference between `setState()` and `replaceState()` methods?
+101. ### setState()和replaceState()方法有什么区别
 
-     When you use `setState()` the current and previous states are merged. `replaceState()` throws out the current state, and replaces it with only what you provide. Usually `setState()` is used unless you really need to remove all previous keys for some reason. You can also set state to `false`/`null` in `setState()` instead of using `replaceState()`.
-
+     当您使用`setState()`时，当前状态和先前状态会合并。 `replaceState()`抛出当前状态，并仅用您提供的状态替换它。通常使用`setState()`，除非您出于某种原因确实需要删除所有先前的键。您也可以在`setState()`中将状态设置为false / null，而不是使用`replaceState()`。
 
    **[⬆ Back to Top](#table-of-contents)**
     
-102. ### How to listen to state changes?
+102. ### 如何监听state变化？
 
-     The `componentDidUpdate` lifecycle method will be called when state changes. You can compare provided state and props values with current state and props to determine if something meaningful changed.
+     状态更改时，将调用`componentDidUpdate`生命周期方法。您可以将提供的state和props值与当前state和props进行比较，以确定是否有意义的更改。
 
      ```
      componentDidUpdate(object prevProps, object prevState)
      ```
 
-     **Note:** The previous releases of ReactJS also uses `componentWillUpdate(object nextProps, object nextState)` for state changes. It has been deprecated in latest releases.
+     **注意：**以前的ReactJS版本也使用`componentWillUpdate(object nextProps，object nextState)`进行状态更改。在最新版本中已不推荐使用。
 
    **[⬆ Back to Top](#table-of-contents)**
     
-103. ### What is the recommended approach of removing an array element in React state?
+103. ### 建议在React状态下删除数组中元素的方法是什么？
 
-     The better approach is to use `Array.prototype.filter()` method.
+    更好的方法是使用`Array.prototype.filter()`方法。
 
-     For example, let's create a `removeItem()` method for updating the state.
+    例如，让我们创建一个`removeItem()`方法来更新状态。
 
      ```javascript
      removeItem(index) {
@@ -2531,9 +2530,9 @@
 
    **[⬆ Back to Top](#table-of-contents)**
     
-104. ### Is it possible to use React without rendering HTML?
+104. ### 是否可以在不渲染HTML的情况下使用React？
 
-     It is possible with latest version (>=16.2). Below are the possible options:
+     可能有最新版本（> = 16.2）。以下是可能的选项：
 
      ```jsx harmony
      render() {
@@ -2565,14 +2564,14 @@
      }
      ```
 
-     Returning `undefined` won't work.
+     返回`undefined`无效。
 
 
    **[⬆ Back to Top](#table-of-contents)**
     
-105. ### How to pretty print JSON with React?
+105. ### 如何使用React漂亮地打印JSON？
 
-     We can use `<pre>` tag so that the formatting of the `JSON.stringify()` is retained:
+     我们可以使用`<pre>`标签，以便保留`JSON.stringify()`的格式：
 
      ```jsx harmony
      const data = { name: 'John', age: 42 }
@@ -2593,16 +2592,15 @@
 
    **[⬆ Back to Top](#table-of-contents)**
     
-106. ### Why you can't update props in React?
+106. ### 为什么您不能在React中更新props？
 
-     The React philosophy is that props should be *immutable* and *top-down*. This means that a parent can send any prop values to a child, but the child can't modify received props.
-
+    React的思想是props应该是`不可变的`和`自上而下的`。这意味着父组件可以将任何props值发送给子组件，但子组件不能修改接收到的props。
 
    **[⬆ Back to Top](#table-of-contents)**
     
-107. ### How to focus an input element on page load?
+107. ### 如何在页面加载时设置input为focus状态？
 
-     You can do it by creating *ref* for `input` element and using it in `componentDidMount()`:
+     您可以通过为`input`元素创建*ref*并在`componentDidMount()`中使用它来实现：
 
      ```jsx harmony
      class App extends React.Component{
@@ -2631,25 +2629,25 @@
 
    **[⬆ Back to Top](#table-of-contents)**
     
-108. ### What are the possible ways of updating objects in state?
+108. ### 有什么可能的方法来更新state对象？
 
-     1. **Calling `setState()` with an object to merge with state:**
-
-         * Using `Object.assign()` to create a copy of the object:
+     1. **调用带有对象的`setState()`与状态合并：**
+     
+          *使用`Object.assign()`创建对象的副本：
 
              ```javascript
              const user = Object.assign({}, this.state.user, { age: 42 })
              this.setState({ user })
              ```
 
-         * Using *spread operator*:
+         *使用* spread运算符*：
 
              ```javascript
              const user = { ...this.state.user, age: 42 }
              this.setState({ user })
              ```
 
-     2. **Calling `setState()` with a function:**
+     2. **使用函数调用`setState()`**
 
          ```javascript
          this.setState(prevState => ({
@@ -2664,9 +2662,9 @@
    **[⬆ Back to Top](#table-of-contents)**
     
 
-110. ### How can we find the version of React at runtime in the browser?
+110. ### 我们如何在运行时在浏览器中找到React的版本？
 
-     You can use `React.version` to get the version.
+     您可以使用`React.version`来获取版本。
 
      ```jsx harmony
      const REACT_VERSION = React.version
@@ -2680,13 +2678,14 @@
 
    **[⬆ Back to Top](#table-of-contents)**
     
-111. ### What are the approaches to include polyfills in your `create-react-app`?
+111. ### 在您的`create-react-app`中包含polyfill的方法有哪些？
 
-     There are approaches to include polyfills in create-react-app,
+     有多种方法可以将polyfill包含在create-react-app中，
 
-     1. **Manual import from `core-js`:**
+     1. 1. **手动从`core-js`导入：**
 
          Create a file called (something like) `polyfills.js` and import it into root `index.js` file. Run `npm install core-js` or `yarn add core-js` and import your specific required features.
+         创建一个名为`polyfills.js`的文件，并将其导入到根`index.js`文件中。运行`npm install core-js`或`yarn add core-js`并导入您所需的特定功能。
 
          ```javascript
          import 'core-js/fn/array/find'
@@ -2694,22 +2693,20 @@
          import 'core-js/fn/number/is-nan'
          ```
 
-     2. **Using Polyfill service:**
+     2. **使用Polyfill服务：**
 
-         Use the polyfill.io CDN to retrieve custom, browser-specific polyfills by adding this line to `index.html`:
-
+         通过将以下行添加到`index.html`中，使用polyfill.io CDN来检索自定义的，特定于浏览器的polyfill：
          ```html
          <script src='https://cdn.polyfill.io/v2/polyfill.min.js?features=default,Array.prototype.includes'></script>
          ```
 
-         In the above script we had to explicitly request the `Array.prototype.includes` feature as it is not included in the default feature set.
-
+         在上面的脚本中，我们必须显式请求`Array.prototype.includes`功能，因为它不包含在默认功能集中。
 
    **[⬆ Back to Top](#table-of-contents)**
     
-112. ### How to use https instead of http in create-react-app?
+112. ### 如何在create-react-app中使用https代替http？
 
-     You just need to use `HTTPS=true` configuration. You can edit your `package.json` scripts section:
+     您只需要使用`HTTPS = true`配置。您可以编辑`package.json`脚本部分：
 
      ```json
      "scripts": {
@@ -2722,22 +2719,22 @@
 
    **[⬆ Back to Top](#table-of-contents)**
     
-113. ### How to avoid using relative path imports in create-react-app?
+113. ### 如何避免在create-react-app中使用相对路径导入？
 
-     Create a file called `.env` in the project root and write the import path:
+     在项目根目录中创建一个名为`.env`的文件，并输入导入路径：
 
      ```
      NODE_PATH=src/app
      ```
 
-     After that restart the development server. Now you should be able to import anything inside `src/app` without relative paths.
+    之后，重新启动开发服务器。现在，您应该可以在没有相对路径的情况下在`src/app`内部导入任何内容。
 
 
    **[⬆ Back to Top](#table-of-contents)**
     
-114. ### How to add Google Analytics for React Router?
+114. ### 如何为 React Router添加Google Analytics ？
 
-     Add a listener on the `history` object to record each page view:
+     在`history`对象上添加一个侦听器以记录每个页面视图：
 
      ```javascript
      history.listen(function (location) {
@@ -2749,9 +2746,9 @@
 
    **[⬆ Back to Top](#table-of-contents)**
     
-115. ### How to update a component every second?
+115. ### 如何每秒更新一次组件？
 
-     You need to use `setInterval()` to trigger the change, but you also need to clear the timer when the component unmounts to prevent errors and memory leaks.
+     您需要使用`setInterval()`来触发更改，但是还需要在组件卸载时清除计时器，以防止错误和内存泄漏。
 
      ```javascript
      componentDidMount() {
@@ -2766,24 +2763,24 @@
 
    **[⬆ Back to Top](#table-of-contents)**
     
-116. ### How do you apply vendor prefixes to inline styles in React?
+116. ### 如何在React中将供应商前缀应用于内联样式？
 
-     React *does not* apply *vendor prefixes* automatically. You need to add vendor prefixes manually.
+     React *不会*自​​动应用*供应商前缀*。您需要手动添加供应商前缀。
 
      ```jsx harmony
      <div style={{
        transform: 'rotate(90deg)',
-       WebkitTransform: 'rotate(90deg)', // note the capital 'W' here
-       msTransform: 'rotate(90deg)' // 'ms' is the only lowercase vendor prefix
+       WebkitTransform: 'rotate(90deg)', // 注意这里的大写字母`W`
+       msTransform: 'rotate(90deg)' // `ms`是唯一的小写供应商前缀
      }} />
      ```
 
 
    **[⬆ Back to Top](#table-of-contents)**
     
-117. ### How to import and export components using React and ES6?
+117. ### 如何使用React和ES6导入和导出组件？
 
-     You should use default for exporting the components
+     您应该使用默认导出组件
 
      ```jsx harmony
      import React from 'react'
@@ -2800,21 +2797,20 @@
      }
      ```
 
-     With the export specifier, the MyProfile is going to be the member and exported to this module and the same can be imported without mentioning the name in other components.
+     使用导出说明符，MyProfile将成为成员并导出到该模块，并且可以导入该模块而无需在其他组件中提及名称。
 
 
    **[⬆ Back to Top](#table-of-contents)**
     
-119. ### Why is a component constructor called only once?
+119. ### 为什么组件构造函数只调用一次？
 
-     React's *reconciliation* algorithm assumes that without any information to the contrary, if a custom component appears in the same place on subsequent renders, it's the same component as before, so reuses the previous instance rather than creating a new one.
-
+    React的*调和*算法假设没有任何相反的信息，如果自定义组件出现在后续渲染的同一位置，则它与以前的组件相同，因此将重用前一个实例，而不是创建一个新实例。
 
    **[⬆ Back to Top](#table-of-contents)**
     
-120. ### How to define constants in React?
+120. ### 如何在React中定义常量？
 
-     You can use ES7 `static` field to define constant.
+     您可以使用ES7的`static`字段来定义常量。
 
      ```javascript
      class MyComponent extends React.Component {
@@ -2822,24 +2818,24 @@
      }
      ```
 
-     *Static fields* are part of the *Class Fields* stage 3 proposal.
+     *Static字段*是*Class字段*阶段3提案的一部分。
 
 
    **[⬆ Back to Top](#table-of-contents)**
     
-121. ### How to programmatically trigger click event in React?
+121. ### 如何在React中以编程方式触发click事件？
 
-     You could use the ref prop to acquire a reference to the underlying `HTMLInputElement` object through a callback, store the reference as a class property, then use that reference to later trigger a click from your event handlers using the `HTMLElement.click` method.
+     您可以使用ref属性通过回调获取对基础`HTMLInputElement`对象的引用，将该引用存储为类属性，然后使用该引用稍后使用`HTMLElement.click`方法从事件处理程序中触发点击。 。
 
-     This can be done in two steps:
+     这可以分两个步骤完成：
 
-     1. Create ref in render method:
+     1. 在渲染方法中创建引用：
 
          ```jsx harmony
          <input ref={input => this.inputElement = input} />
          ```
 
-     2. Apply click event in your event handler:
+     2. 在事件处理程序中应用click事件：
 
          ```javascript
          this.inputElement.click()
@@ -2848,20 +2844,20 @@
 
    **[⬆ Back to Top](#table-of-contents)**
     
-122. ### Is it possible to use async/await in plain React?
+122. ### 是否可以在普通React中使用async / await？
 
-     If you want to use `async`/`await` in React, you will need *Babel* and [transform-async-to-generator](https://babeljs.io/docs/en/babel-plugin-transform-async-to-generator) plugin. React Native ships with Babel and a set of transforms.
+     如果您想在React中使用`async` /`await`，则需要*Babel*和[transform-async-to-generator]（https://babeljs.io/docs/zh/babel-plugin-transform-异步生成器）插件。 React Native附带Babel和一组转换。
 
 
    **[⬆ Back to Top](#table-of-contents)**
     
-123. ### What are the common folder structures for React?
+123. ### React常用的文件夹结构是什么？
 
-     There are two common practices for React project file structure.
+     React项目文件结构有两种常见做法。
 
-     1. **Grouping by features or routes:**
+     1. **按功能或路由分组：**
 
-         One common way to structure projects is locate CSS, JS, and tests together, grouped by feature or route.
+         一种构造项目的常见方法是将CSS，JS和测试放在一起，并按功能或路由进行分组。
 
          ```
          common/
@@ -2884,9 +2880,9 @@
          └─ ProfileAPI.js
          ```
 
-     2. **Grouping by file type:**
+     2. **按文件类型分组：**
 
-         Another popular way to structure projects is to group similar files together.
+         构造项目的另一种流行方式是将相似文件分组在一起。
 
          ```
          api/
@@ -2909,18 +2905,18 @@
 
    **[⬆ Back to Top](#table-of-contents)**
     
-124. ### What are the popular packages for animation?
+124. ### 有哪些流行的动画软件包？
 
-     *React Transition Group* and *React Motion* are popular animation packages in React ecosystem.
+     *React Transition Group*和*React Motion*是React生态系统中流行的动画包。
 
 
    **[⬆ Back to Top](#table-of-contents)**
     
-125. ### What is the benefit of styles modules?
+125. ### styles modules的好处是什么？
 
-     It is recommended to avoid hard coding style values in components. Any values that are likely to be used across different UI components should be extracted into their own modules.
+     建议避免对组件中的样式值进行硬编码。任何可能在不同UI组件之间使用的值都应提取到其自己的模块中。
 
-     For example, these styles could be extracted into a separate component:
+     例如，可以将这些样式提取到单独的组件中：
 
      ```javascript
      export const colors = {
@@ -2938,7 +2934,7 @@
      ]
      ```
 
-     And then imported individually in other components:
+     然后分别导入其他组件：
 
      ```javascript
      import { space, colors } from './styles'
@@ -2947,20 +2943,20 @@
 
    **[⬆ Back to Top](#table-of-contents)**
     
-126. ### What are the popular React-specific linters?
+126. ### 什么是最受欢迎的React-specific linters？
 
-     ESLint is a popular JavaScript linter. There are plugins available that analyse specific code styles. One of the most common for React is an npm package called `eslint-plugin-react`. By default, it will check a number of best practices, with rules checking things from keys in iterators to a complete set of prop types.
+    ESLint是一种流行的JavaScript linter。有可用的插件来分析特定的代码样式。对于React来说，最常见的方法之一是一个名为`eslint-plugin-react`的npm软件包。默认情况下，它将检查一些最佳实践，其中规则检查从迭代器中的键到一组完整的props类型的事物。
 
-     Another popular plugin is `eslint-plugin-jsx-a11y`, which will help fix common issues with accessibility. As JSX offers slightly different syntax to regular HTML, issues with `alt` text and `tabindex`, for example, will not be picked up by regular plugins.
+     另一个流行的插件是`eslint-plugin-jsx-a11y`，它将帮助解决可访问性方面的常见问题。由于JSX提供的语法与常规HTML稍有不同，因此，例如alt文本和tabindex的问题将不会由常规插件解决。
 
 
    **[⬆ Back to Top](#table-of-contents)**
     
-127. ### How to make AJAX call and in which component lifecycle methods should I make an AJAX call?
+127. ### 如何进行AJAX调用，应该在哪个组件生命周期方法中进行AJAX调用？
 
-     You can use AJAX libraries such as Axios, jQuery AJAX, and the browser built-in `fetch`. You should fetch data in the `componentDidMount()` lifecycle method. This is so you can use `setState()` to update your component when the data is retrieved.
+     您可以使用诸如Axios，jQuery AJAX之类的AJAX库以及浏览器内置的`fetch`。您应该在`componentDidMount()`生命周期方法中获取数据。这样一来，您可以在检索数据时使用`setState()`更新组件。
 
-     For example, the employees list fetched from API and set local state:
+     例如，员工列表从API获取并设置本地state：
 
      ```jsx harmony
      class MyComponent extends React.Component {
@@ -3009,9 +3005,9 @@
 
    **[⬆ Back to Top](#table-of-contents)**
     
-128. ### What are render props?
+128. ### 什么是render props?
 
-     **Render Props** is a simple technique for sharing code between components using a prop whose value is a function. The below component uses render prop which returns a React element.
+    **Render Props**是一种简单的技术，它使用价值为函数的props在组件之间共享代码。下面的组件使用render属性，该属性返回一个React元素。
 
      ```jsx harmony
      <DataProvider render={data => (
@@ -3019,7 +3015,7 @@
      )}/>
      ```
 
-     Libraries such as React Router and DownShift are using this pattern.
+     诸如React Router和DownShift之类的库正在使用此模式。
 
 ## React 路由
 
