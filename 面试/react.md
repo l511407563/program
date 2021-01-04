@@ -215,63 +215,63 @@
 |204| [什么是Relay？](#what-is-relay) |
 |205| [如何在“ create-react-app”应用程序中使用TypeScript？](#how-to-use-typescript-in-create-react-app-application) |
 |   | **其他** |
-|206| [What are the main features of reselect library?](#what-are-the-main-features-of-reselect-library) |
-|207| [Give an example of reselect usage?](#give-an-example-of-reselect-usage) |
-|209| [Does the statics object work with ES6 classes in React?](#does-the-statics-object-work-with-es6-classes-in-react) |
-|210| [Can Redux only be used with React?](#can-redux-only-be-used-with-react) |
-|211| [Do you need to have a particular build tool to use Redux?](#do-you-need-to-have-a-particular-build-tool-to-use-redux) |
-|212| [How Redux Form initialValues get updated from state?](#how-redux-form-initialvalues-get-updated-from-state) |
-|213| [How React PropTypes allow different type for one prop?](#how-react-proptypes-allow-different-types-for-one-prop) |
-|214| [Can I import an SVG file as react component?](#can-i-import-an-svg-file-as-react-component) |
-|215| [Why are inline ref callbacks or functions not recommended?](#why-are-inline-ref-callbacks-or-functions-not-recommended)|
-|216| [What is render hijacking in React?](#what-is-render-hijacking-in-react)|
-|217| [What are HOC factory implementations?](#what-are-hoc-factory-implementations)|
-|218| [How to pass numbers to React component?](#how-to-pass-numbers-to-react-component)|
-|219| [Do I need to keep all my state into Redux? Should I ever use react internal state?](#do-i-need-to-keep-all-my-state-into-redux-should-i-ever-use-react-internal-state)|
-|220| [What is the purpose of registerServiceWorker in React?](#what-is-the-purpose-of-registerserviceworker-in-react)|
-|221| [What is React memo function?](#what-is-react-memo-function)|
-|222| [What is React lazy function?](#what-is-react-lazy-function)|
-|223| [How to prevent unnecessary updates using setState?](#how-to-prevent-unnecessary-updates-using-setstate)|
+|206| [Reselect库的主要功能是什么？](#what-are-the-main-features-of-reselect-library) |
+|207| [举一个Reselect用法的例子吗？](#give-an-example-of-reselect-usage) |
+|209| [静态对象是否可以与React中的ES6类一起使用？](#does-the-statics-object-work-with-es6-classes-in-react) |
+|210| [Redux只能与React一起使用吗？](#can-redux-only-be-used-with-react) |
+|211| [您是否需要特定的构建工具才能使用Redux？](#do-you-need-to-have-a-particular-build-tool-to-use-redux) |
+|212| [Redux Form`initialValues`如何从状态更新？](#how-redux-form-initialvalues-get-updated-from-state) |
+|213| [React PropTypes如何为一个prop允许不同的类型？](#how-react-proptypes-allow-different-types-for-one-prop) |
+|214| [我可以导入SVG文件作为react组件吗？](#can-i-import-an-svg-file-as-react-component) |
+|215| [为什么不建议内联ref回调或函数？](#why-are-inline-ref-callbacks-or-functions-not-recommended)|
+|216| [什么是渲染劫持？](#what-is-render-hijacking-in-react)|
+|217| [什么是高阶工厂实现？](#what-are-hoc-factory-implementations)|
+|218| [如何将数字传递给React组件？](#how-to-pass-numbers-to-react-component)|
+|219| [我需要将所有状态保持在Redux吗？我应该使用React内部状态吗？](#do-i-need-to-keep-all-my-state-into-redux-should-i-ever-use-react-internal-state)|
+|220| [React中registerServiceWorker的目的是什么？](#what-is-the-purpose-of-registerserviceworker-in-react)|
+|221| [什么是React缓存功能？](#what-is-react-memo-function)|
+|222| [什么是React惰性函数？](#what-is-react-lazy-function)|
+|223| [如何使用setState防止不必要的更新？](#how-to-prevent-unnecessary-updates-using-setstate)|
 |224| [How do you render Array, Strings and Numbers in React 16 Version?](#how-do-you-render-array-strings-and-numbers-in-react-16-version)|
-|225| [How to use class field declarations syntax in React classes?](#how-to-use-class-field-declarations-syntax-in-react-classes)|
-|226| [What are hooks?](#what-are-hooks)|
-|227| [What are the rules needs to follow for hooks?](#what-are-the-rules-needs-to-follow-for-hooks)|
-|228| [How to ensure hooks followed the rules in your project?](#how-to-ensure-hooks-followed-the-rules-in-your-project)|
-|229| [What are the differences between Flux and Redux?](#what-are-the-differences-between-flux-and-redux)|
-|230| [What are the benefits of React Router V4?](#what-are-the-benefits-of-react-router-v4)|
-|231| [Can you describe about componentDidCatch lifecycle method signature?](#can-you-describe-about-componentdidcatch-lifecycle-method-signature)|
-|232| [In which scenarios error boundaries do not catch errors?](#in-which-scenarios-error-boundaries-do-not-catch-errors)|
-|233| [Why do not you need error boundaries for event handlers?](#why-do-not-you-need-error-boundaries-for-event-handlers)|
-|234| [What is the difference between try catch block and error boundaries?](#what-is-the-difference-between-try-catch-block-and-error-boundaries)|
-|235| [What is the behavior of uncaught errors in react 16?](#what-is-the-behavior-of-uncaught-errors-in-react-16)|
-|236| [What is the proper placement for error boundaries?](#what-is-the-proper-placement-for-error-boundaries)|
-|237| [What is the benefit of component stack trace from error boundary?](#what-is-the-benefit-of-component-stack-trace-from-error-boundary)|
-|238| [What is the required method to be defined for a class component?](#what-is-the-required-method-to-be-defined-for-a-class-component)|
-|239| [What are the possible return types of render method?](#what-are-the-possible-return-types-of-render-method)|
-|240| [What is the main purpose of constructor?](#what-is-the-main-purpose-of-constructor)|
-|241| [Is it mandatory to define constructor for React component?](#is-it-mandatory-to-define-constructor-for-react-component)|
-|242| [What are default props?](#what-are-default-props)|
-|243| [Why should not call setState in componentWillUnmount?](#why-should-not-call-setstate-in-componentwillunmount)|
-|244| [What is the purpose of getDerivedStateFromError?](#what-is-the-purpose-of-getderivedstatefromerror)|
-|245| [What is the methods order when component re-rendered?](#what-is-the-methods-order-when-component-re-rendered)|
-|246| [What are the methods invoked during error handling?](#what-are-the-methods-invoked-during-error-handling)|
-|247| [What is the purpose of displayName class property?](#what-is-the-purpose-of-displayname-class-property)|
-|248| [What is the browser support for react applications?](#what-is-the-browser-support-for-react-applications)|
-|249| [What is the purpose of unmountComponentAtNode method?](#what-is-the-purpose-of-unmountcomponentatnode-method)|
-|250| [What is code-splitting?](#what-is-code-splitting)|
-|251| [What is the benefit of strict mode?](#what-is-the-benefit-of-strict-mode)|
-|252| [What are Keyed Fragments?](#what-are-keyed-fragments)|
-|253| [Does React support all HTML attributes?](#does-react-support-all-html-attributes)|
-|254| [What are the limitations with HOCs?](#what-are-the-limitations-with-hocs)|
-|255| [How to debug forwardRefs in DevTools?](#how-to-debug-forwardrefs-in-devtools)|
-|256| [When component props defaults to true?](#when-component-props-defaults-to-true)|
-|257| [What is NextJS and major features of it?](#what-is-nextjs-and-major-features-of-it)|
-|258| [How do you pass an event handler to a component?](#how-do-you-pass-an-event-handler-to-a-component)|
-|259| [Is it good to use arrow functions in render methods?](#is-it-good-to-use-arrow-functions-in-render-methods)|
-|260| [How to prevent a function from being called multiple times?](#how-to-prevent-a-function-from-being-called-multiple-times)|
-|261| [How JSX prevents Injection Attacks?](#how-jsx-prevents-injection-attacks)|
-|262| [How do you update rendered elements?](#how-do-you-update-rendered-elements)|
-|263| [How do you say that props are read only?](#how-do-you-say-that-props-are-read-only)|
+|225| [如何在React类中使用类字段声明语法？](#how-to-use-class-field-declarations-syntax-in-react-classes)|
+|226| [什么是hooks？](#what-are-hooks)|
+|227| [hooks需要遵循哪些规则？](#what-are-the-rules-needs-to-follow-for-hooks)|
+|228| [如何确保hooks遵循您项目中的规则？](#how-to-ensure-hooks-followed-the-rules-in-your-project)|
+|229| [Flux和Redux有什么区别？](#what-are-the-differences-between-flux-and-redux)|
+|230| [React Router V4有什么好处？](#what-are-the-benefits-of-react-router-v4)|
+|231| [您能描述一下componentDidCatch生命周期方法签名吗？](#can-you-describe-about-componentdidcatch-lifecycle-method-signature)|
+|232| [在哪些情况下错误边界不会捕获错误？](#in-which-scenarios-error-boundaries-do-not-catch-errors)|
+|233| [为什么您不需要事件处理程序的错误边界？](#why-do-not-you-need-error-boundaries-for-event-handlers)|
+|234| [try catch块和错误边界之间有什么区别？](#what-is-the-difference-between-try-catch-block-and-error-boundaries)|
+|235| [React 16中未捕获的错误的行为是什么？](#what-is-the-behavior-of-uncaught-errors-in-react-16)|
+|236| [错误边界的正确位置是什么？](#what-is-the-proper-placement-for-error-boundaries)|
+|237| [从错误边界跟踪组件堆栈有什么好处？](#what-is-the-benefit-of-component-stack-trace-from-error-boundary)|
+|238| [为类组件定义所需的方法是什么？](#what-is-the-required-method-to-be-defined-for-a-class-component)|
+|239| [渲染方法的可能返回类型是什么？](#what-are-the-possible-return-types-of-render-method)|
+|240| [构造函数的主要目的是什么？](#what-is-the-main-purpose-of-constructor)|
+|241| [是否必须为React组件定义构造函数？](#is-it-mandatory-to-define-constructor-for-react-component)|
+|242| [什么是默认props？](#what-are-default-props)|
+|243| [为什么不应该在componentWillUnmount中调用setState？](#why-should-not-call-setstate-in-componentwillunmount)|
+|244| [getDerivedStateFromError的目的是什么？](#what-is-the-purpose-of-getderivedstatefromerror)|
+|245| [重新渲染组件时方法的顺序是什么？](#what-is-the-methods-order-when-component-re-rendered)|
+|246| [错误处理期间调用了哪些方法？](#what-are-the-methods-invoked-during-error-handling)|
+|247| [displayName类属性的用途是什么？](#what-is-the-purpose-of-displayname-class-property)|
+|248| [浏览器对React应用程序的支持是什么？](#what-is-the-browser-support-for-react-applications)|
+|249| [unmountComponentAtNode方法的目的是什么？](#what-is-the-purpose-of-unmountcomponentatnode-method)|
+|250| [什么是代码拆分？](#what-is-code-splitting)|
+|251| [严格模式的好处是什么？](#what-is-the-benefit-of-strict-mode)|
+|252| [什么是Keyed Fragments？](#what-are-keyed-fragments)|
+|253| [React是否支持所有HTML属性？](#does-react-support-all-html-attributes)|
+|254| [HOC的局限性是什么？](#what-are-the-limitations-with-hocs)|
+|255| [如何在DevTools中调试forwardRefs？](#how-to-debug-forwardrefs-in-devtools)|
+|256| [组件属性何时默认为true？](#when-component-props-defaults-to-true)|
+|257| [什么是NextJS及其主要功能？](#what-is-nextjs-and-major-features-of-it)|
+|258| [如何将事件处理程序传递给组件？](#how-do-you-pass-an-event-handler-to-a-component)|
+|259| [在渲染方法中使用箭头功能是否很好？](#is-it-good-to-use-arrow-functions-in-render-methods)|
+|260| [如何防止一个函数被多次调用？](#how-to-prevent-a-function-from-being-called-multiple-times)|
+|261| [JSX如何防止注入攻击？](#how-jsx-prevents-injection-attacks)|
+|262| [如何更新渲染的元素？](#how-do-you-update-rendered-elements)|
+|263| [您怎么说props是只读的？](#how-do-you-say-that-props-are-read-only)|
 |264| [How do you say that state updates are merged?](#how-do-you-say-that-state-updates-are-merged)|
 |265| [How do you pass arguments to an event handler?](#how-do-you-pass-arguments-to-an-event-handler)|
 |266| [How to prevent component from rendering?](#how-to-prevent-component-from-rendering)|
@@ -4464,7 +4464,7 @@
 
    **[⬆ Back to Top](#table-of-contents)**
     
-206. ### What are the main features of Reselect library?
+206. ### Reselect库的主要功能是什么？
 
      Let's see the main features of Reselect library,
 
@@ -4472,7 +4472,7 @@
        2. Selectors are efficient. A selector is not recomputed unless one of its arguments changes.
        3. Selectors are composable. They can be used as input to other selectors.
 
-207. #### Give an example of Reselect usage?
+207. #### 举一个Reselect用法的例子吗？
 
      Let's take calculations and different amounts of a shipment order with the simplified usage of Reselect:
 
@@ -4517,7 +4517,7 @@
 
    **[⬆ Back to Top](#table-of-contents)**
     
-209. ### Does the statics object work with ES6 classes in React?
+209. ### 静态对象是否可以与React中的ES6类一起使用？
 
      No, `statics` only works with `React.createClass()`:
 
@@ -4559,21 +4559,21 @@
 
    **[⬆ Back to Top](#table-of-contents)**
     
-210. ### Can Redux only be used with React?
+210. ### Redux只能与React一起使用吗？
 
-     Redux can be used as a data store for any UI layer. The most common usage is with React and React Native, but there are bindings available for Angular, Angular 2, Vue, Mithril, and more. Redux simply provides a subscription mechanism which can be used by any other code.
-
-
-   **[⬆ Back to Top](#table-of-contents)**
-    
-211. ### Do you need to have a particular build tool to use Redux?
-
-     Redux is originally written in ES6 and transpiled for production into ES5 with Webpack and Babel. You should be able to use it regardless of your JavaScript build process. Redux also offers a UMD build that can be used directly without any build process at all.
+   Redux可以用作任何UI层的数据存储。最常见的用法是使用React和React Native，但是有绑定可用于Angular，Angular 2，Vue，Mithril等。 Redux只是提供一种订阅机制，任何其他代码都可以使用。
 
 
    **[⬆ Back to Top](#table-of-contents)**
     
-212. ### How Redux Form `initialValues` get updated from state?
+211. ### 您是否需要特定的构建工具才能使用Redux？
+
+     Redux最初是用ES6编写的，并通过Webpack和Babel进行编译以用于ES5。无论您的JavaScript构建过程如何，您都应该能够使用它。 Redux还提供了一个UMD构建，该构建可以直接使用而无需任何构建过程。
+
+
+   **[⬆ Back to Top](#table-of-contents)**
+    
+212. ### Redux Form`initialValues`如何从状态更新？
 
      You need to add `enableReinitialize : true` setting.
 
@@ -4589,7 +4589,7 @@
 
    **[⬆ Back to Top](#table-of-contents)**
     
-213. ### How React PropTypes allow different types for one prop?
+213. ### React PropTypes如何为一个prop允许不同的类型？
 
      You can use `oneOfType()` method of `PropTypes`.
 
@@ -4607,10 +4607,9 @@
 
    **[⬆ Back to Top](#table-of-contents)**
     
-214. ### Can I import an SVG file as react component?
+214. ### 我可以导入SVG文件作为react组件吗？
 
-     You can import SVG directly as component instead of loading it as a file. This feature is available with `react-scripts@2.0.0` and higher.
-
+    您可以直接将SVG作为组件导入，而不是将其作为文件加载。此功能可在`react-scripts@2.0.0`及更高版本中使用。
      ```jsx harmony
      import { ReactComponent as Logo } from './logo.svg'
 
@@ -4622,14 +4621,14 @@
      )
      ```
 
-     **Note**: Don't forget about the curly braces in the import.
+    **注意**：不要忘记导入中的花括号。
 
 
    **[⬆ Back to Top](#table-of-contents)**
     
-215. ### Why are inline ref callbacks or functions not recommended?
+215. ### 为什么不建议内联ref回调或函数？
 
-     If the ref callback is defined as an inline function, it will get called twice during updates, first with null and then again with the DOM element. This is because a new instance of the function is created with each render, so React needs to clear the old ref and set up the new one.
+     如果将ref回调定义为内联函数，则在更新期间它将被调用两次，首先是null，然后是DOM元素。这是因为每个渲染都会创建该函数的新实例，因此React需要清除旧的ref并设置新的ref。
 
      ```jsx
      class UserForm extends Component {
@@ -4643,7 +4642,7 @@
           <form onSubmit={this.handleSubmit}>
             <input
               type='text'
-              ref={(input) => this.input = input} /> // Access DOM input in handle submit
+              ref={(input) => this.input = input} /> // 在句柄提交中访问DOM输入
             <button type='submit'>Submit</button>
           </form>
         )
@@ -4651,7 +4650,7 @@
      }
      ```
 
-     But our expectation is for the ref callback to get called once, when the component mounts. One quick fix is to use the ES7 class property syntax to define the function
+     但是我们期望在组件安装时，ref回调会被调用一次。一种快速解决方法是使用ES7类属性语法来定义函数
 
      ```jsx
      class UserForm extends Component {
@@ -4668,7 +4667,7 @@
           <form onSubmit={this.handleSubmit}>
             <input
               type='text'
-              ref={this.setSearchInput} /> // Access DOM input in handle submit
+              ref={this.setSearchInput} /> // 在句柄提交中访问DOM输入
             <button type='submit'>Submit</button>
           </form>
         )
@@ -4679,24 +4678,25 @@
     **Note:** In React v16.3,
    **[⬆ Back to Top](#table-of-contents)**
     
-216. ### What is render hijacking in react?
+216. ### 什么是渲染劫持？
 
-     The concept of render hijacking is the ability to control what a component will output from another component. It actually means that you decorate your component by wrapping it into a Higher-Order component. By wrapping you can inject additional props or make other changes, which can cause changing logic of rendering. It does not actually enables hijacking, but by using HOC you make your component behave in different way.
+    渲染劫持的概念是控制一个组件将从另一个组件输出什么的能力。这实际上意味着您通过将组件包装到高阶组件中来装饰组件。通过包装，您可以注入其他prop或进行其他更改，这可能导致更改渲染逻辑。它实际上并没有启用劫持，但是通过使用HOC，您可以使组件以不同的方式运行。
 
 
    **[⬆ Back to Top](#table-of-contents)**
     
-217. ### What are HOC factory implementations?
-     There are two main ways of implementing HOCs in React.
+217. ### 什么是高阶工厂实现？
+    在React中实现HOC的主要方法有两种。
 
-     1. Props Proxy (PP) and
-     2. Inheritance Inversion (II).
+     1.props代理（PP）和
+     2.继承反转（II）。
 
-     But they follow different approaches for manipulating the *WrappedComponent*.
+     但是他们遵循不同的方法来处理*WrappedComponent*。
 
-     **Props Proxy**
+     **props代理**
 
-     In this approach, the render method of the HOC returns a React Element of the type of the WrappedComponent. We also pass through the props that the HOC receives, hence the name **Props Proxy**.
+    在这种方法中，HOC的render方法返回WrappedComponent类型的React元素。我们还通过了HOC收到的props，因此命名为
+    **props代理**.
 
      ```jsx
 
@@ -4708,9 +4708,9 @@
       }
      }
      ```
-     **Inheritance Inversion**
+     **继承反转**
 
-     In this approach, the returned HOC class (Enhancer) extends the WrappedComponent. It is called Inheritance Inversion because instead of the WrappedComponent extending some Enhancer class, it is passively extended by the Enhancer. In this way the relationship between them seems **inverse**.
+     在这种方法中，返回的HOC类（Enhancer）扩展了WrappedComponent。之所以称为继承反转，是因为它不是由WrappedComponent扩展某些Enhancer类的，而是由Enhancer被动地扩展的。这样看来他们之间的关系**inverse**.
 
      ```jsx
      function iiHOC(WrappedComponent) {
@@ -4724,9 +4724,9 @@
 
    **[⬆ Back to Top](#table-of-contents)**
     
-218. ### How to pass numbers to React component?
+218. ### 如何将数字传递给React组件？
 
-     You should be passing the numbers via curly braces({}) where as strings in quotes
+    您应该通过大括号{}传递数字，其中用引号引起来
 
      ```jsx
         React.render(<User age={30} department={"IT"} />, document.getElementById('container'));
@@ -4734,22 +4734,22 @@
 
    **[⬆ Back to Top](#table-of-contents)**
     
-219. ### Do I need to keep all my state into Redux? Should I ever use react internal state?
-     It is up to developer decision. i.e, It is developer job to determine what kinds of state make up your application, and where each piece of state should live. Some users prefer to keep every single piece of data in Redux, to maintain a fully serializable and controlled version of their application at all times. Others prefer to keep non-critical or UI state, such as “is this dropdown currently open”, inside a component's internal state.
+219. ### 我需要将所有状态保持在Redux吗？我应该使用React内部状态吗？
+    由开发人员决定。即，确定应用程序构成哪种状态以及每种状态应驻留的位置是开发人员的工作。一些用户喜欢将每个数据保留在Redux中，以始终保持其应用程序的完全可序列化和受控版本。其他人则喜欢在组件的内部状态中保持非关键或UI状态，例如*此下拉列表当前是否打开*。
 
-     Below are the thumb rules to determine what kind of data should be put into Redux
-     1. Do other parts of the application care about this data?
-     2. Do you need to be able to create further derived data based on this original data?
-     3. Is the same data being used to drive multiple components?
-     4. Is there value to you in being able to restore this state to a given point in time (ie, time travel debugging)?
-     5. Do you want to cache the data (i.e, use what's in state if it's already there instead of re-requesting it)?
+     以下是确定应将哪种数据放入Redux的经验法则
+     1.应用程序的其他部分是否关心此数据？
+     2.您是否需要能够基于此原始数据创建其他派生数据？
+     3.是否使用相同的数据来驱动多个组件？
+     4.能够将状态恢复到给定的时间点（例如，时间旅行调试）对您来说是否有价值？
+     5.您是否要缓存数据（即，使用已存在的状态而不是重新请求）？
 
 
    **[⬆ Back to Top](#table-of-contents)**
     
-220. ### What is the purpose of registerServiceWorker in React?
+220. ### React中registerServiceWorker的目的是什么？
 
-     React creates a service worker for you without any configuration by default. The service worker is a web API that helps you cache your assets and other files so that when the user is offline or on slow network, he/she can still see results on the screen, as such, it helps you build a better user experience, that's what you should know about service worker's for now. It's all about adding offline capabilities to your site.
+      默认情况下，React为您创建一个service worker，无需任何配置。service worker是一个Web API，可帮助您缓存资产和其他文件，以便当用户脱机或网络速度较慢时，他/她仍可以在屏幕上看到结果，因此，它可以帮助您建立更好的用户体验，这就是您现在应该了解的关于service worker的知识。这一切都是关于向您的站点添加脱机功能。
 
      ```jsx
         import React from 'react';
@@ -4763,19 +4763,19 @@
 
    **[⬆ Back to Top](#table-of-contents)**
     
-221. ### What is React memo function?
+221. ### 什么是React缓存功能？
 
-     Class components can be restricted from rendering when their input props are the same using **PureComponent or shouldComponentUpdate**. Now you can do the same with function components by wrapping them in **React.memo**.
+    当使用**PureComponent或shouldComponentUpdate**输入props相同时，可以限制类组件的渲染。现在，您可以通过将功能组件包装在**React.memo**中来对它们进行相同的操作。
      ```jsx
      const MyComponent = React.memo(function MyComponent(props) {
-      /* only rerenders if props change */
+      /* 只有在props改变时重新渲染 */
      });
      ```
 
    **[⬆ Back to Top](#table-of-contents)**
     
-222. ### What is React lazy function?
-     The `React.lazy` function lets you render an dynamic import as a regular component. It will automatically load the bundle containing the OtherComponent when the component gets rendered. This must return a Promise which resolves to a module with a default export containing a React component.
+222. ### 什么是React惰性函数？
+     `React.lazy`函数使您可以将动态导入呈现为常规组件。呈现组件时，它将自动加载包含OtherComponent的捆绑软件。这必须返回一个Promise，该Promise解析为一个带有默认导出的模块，该模块包含一个React组件。
      ```jsx
      const OtherComponent = React.lazy(() => import('./OtherComponent'));
 
@@ -4787,15 +4787,15 @@
       );
      }
      ```
-     **Note:**
-     React.lazy and Suspense is not yet available for server-side rendering. If you want to do code-splitting in a server rendered app, we still recommend React Loadable.
+    **注意：**
+     React.lazy和Suspense尚不能用于服务器端渲染。如果您想在服务器渲染的应用程序中进行代码拆分，我们仍然建议使用React Loadable。
 
    **[⬆ Back to Top](#table-of-contents)**
     
-223. ### How to prevent unnecessary updates using setState?
-     You can compare current value of the state with an existing state value and decide whether to rerender the page or not. If the values are same then you need to return **null** to stop re-rendering otherwise return the latest state value.
+223. ### 如何使用setState防止不必要的更新？
+     您可以将状态的当前值与现有的状态值进行比较，并决定是否重新呈现页面。如果值相同，则需要返回**null**以停止重新渲染，否则返回最新状态值。
 
-     For example, the user profile information is conditionally rendered as follows,
+     例如，按如下方式有条件地呈现用户配置文件信息，
      ```jsx
      getUserProfile = user => {
        const latestAddress = user.address;
@@ -4811,10 +4811,10 @@
 
    **[⬆ Back to Top](#table-of-contents)**
     
-224. ### How do you render Array, Strings and Numbers in React 16 Version?
-     **Arrays**: Unlike older releases, you don't need to make sure **render** method return a single element in React16. You are able to return multiple sibling elements without a wrapping element by returning an array.
+224. ### 如何在React 16版本中呈现数组，字符串和数字？
+     **Arrays**: 与旧版本不同，您无需确定 **render** 方法返回React16中的单个元素。您可以通过返回一个数组来返回多个没有包装元素的兄弟元素。
 
-     For example, let us take the below list of developers,
+     例如，让我们采用以下开发人员列表，
 
      ```jsx
      const ReactJSDevs = () => {
@@ -4825,7 +4825,7 @@
        ];
      }
      ```
-     You can also merge this array of items in another array component.
+     您还可以将此项目数组合并到另一个数组组件中。
      ```jsx
      const JSDevs = () => {
        return (
@@ -4838,7 +4838,7 @@
        );
      }
      ```
-     **Strings and Numbers:** You can also return string and number type from the render method.
+     **Strings and Numbers:** 您还可以从render方法返回字符串和数字类型。
 
      ```jsx
      render() {
@@ -4852,10 +4852,10 @@
 
    **[⬆ Back to Top](#table-of-contents)**
     
-225. ### How to use class field declarations syntax in React classes?
-     React Class Components can be made much more concise using the class field declarations. You can initialize local state without using the constructor and declare class methods by using arrow functions without the extra need to bind them.
+225. ### 如何在React类中使用类字段声明语法？
+     使用类字段声明可以使React类组件更加简洁。您可以在不使用构造函数的情况下初始化局部状态，并通过使用箭头函数声明类方法而无需额外绑定它们。
 
-     Let's take a counter example to demonstrate class field declarations for state without using constructor and methods without binding,
+     让我们举一个反例来演示状态的类字段声明，而无需使用构造函数和方法而无需绑定，
      ```jsx
      class Counter extends Component {
        state = { value: 0 };
@@ -4887,15 +4887,15 @@
 
    **[⬆ Back to Top](#table-of-contents)**
     
-226. ### What are hooks?
-     Hooks is a new feature(React 16.8) that lets you use state and other React features without writing a class.
+226. ### 什么是hooks？
+     Hooks是一项新功能（React 16.8），使您无需编写类即可使用状态和其他React功能。
 
-     Let's see an example of useState hook example,
+     让我们看一个useState挂钩示例的例子，
      ```jsx
      import { useState } from 'react';
 
      function Example() {
-       // Declare a new state variable, which we'll call "count"
+       // 声明一个新的状态变量，我们称之为"count"
        const [count, setCount] = useState(0);
 
        return (
@@ -4911,18 +4911,18 @@
 
    **[⬆ Back to Top](#table-of-contents)**
     
-227. ### What are the rules needs to follow for hooks?
+227. ### hooks需要遵循哪些规则？
 
-     You need to follow two rules in order to use hooks,
+     您需要遵循两个规则才能使用hooks，
 
-     1. Call Hooks only at the top level of your react functions. i.e, You shouldn’t call Hooks inside loops, conditions, or nested functions. This will ensure that Hooks are called in the same order each time a component renders and it preserves the state of Hooks between multiple useState and useEffect calls.
-     2. Call Hooks from React Functions only. i.e, You shouldn’t call Hooks from regular JavaScript functions.
+     1. 仅在您的反应函数的顶层调用挂钩。也就是说，您不应在循环，条件或嵌套函数中调用Hook。这将确保每次渲染组件时都以相同的顺序调用Hook，并且在多个useState和useEffect调用之间保留Hook的状态。
+     2. 仅从React Functions调用Hook。即，您不应从常规JavaScript函数中调用Hook。
 
 
    **[⬆ Back to Top](#table-of-contents)**
     
-228. ### How to ensure hooks followed the rules in your project?
-     React team released an ESLint plugin called **eslint-plugin-react-hooks** that enforces these two rules. You can add this plugin to your project using the below command,
+228. ### 如何确保hooks遵循您项目中的规则？
+    React团队发布了一个名为**eslint-plugin-react-hooks**的ESLint插件，该插件执行了这两个规则。您可以使用以下命令将此插件添加到您的项目中，
      ```javascript
      npm install eslint-plugin-react-hooks@next
      ```
@@ -4940,59 +4940,59 @@
        }
      }
      ```
-     **Note:** This plugin is intended to use in Create React App by default.
+    **注意：**默认情况下，此插件旨在在Create React App中使用。
 
 
    **[⬆ Back to Top](#table-of-contents)**
     
-229. ### What are the differences between Flux and Redux?
-     Below are the major differences between Flux and Redux
+229. ### Flux和Redux有什么区别？
+     以下是Flux和Redux之间的主要区别
 
      | Flux | Redux |
      | ----- | ------- |
-     | State is mutable | State is immutable |
-     | The Store contains both state and change logic | The Store and change logic are separate |
-     | There are multiple stores exist | There is only one store exist |
-     | All the stores are disconnected and flat | Single store with hierarchical reducers|
-     | It has a singleton dispatcher | There is no concept of dispatcher |
-     | React components subscribe to the store | Container components uses connect function|
+     | 状态是易变的 | 状态是一成不变的 |
+     | 存储既包含状态逻辑又包含更改逻辑 | 存储和更改逻辑是分开的 |
+     | 存在多个store | 只有一个store |
+     | 所有store都断开连接并保持平坦 | 具有分层reducers的单个store|
+     | 它有一个单例调度程序 | 没有调度员的概念 |
+     | React组件订阅store | 容器组件使用连接功能|
 
    **[⬆ Back to Top](#table-of-contents)**
     
-230. ### What are the benefits of React Router V4?
-     Below are the main benefits of React Router V4 module,
+230. ### React Router V4有什么好处？
+     以下是React Router V4模块的主要优点，
 
-     1. In React Router v4(version 4), the API is completely about components. A router can be visualized as a single component(`<BrowserRouter>`) which wraps specific child router components(`<Route>`).
-     2. You don't need to manually set history. The router module will take care history by wrapping routes with  `<BrowserRouter>` component.
-     3. The application size is reduced by adding only the specific router module(Web, core, or native)
+     1.在React Router v4（版本4）中，API完全与组件有关。路由器可以可视化为单个组件（`<BrowserRouter>`），其中包含特定的子路由器组件（`<Route>`）。
+     2.您无需手动设置历史记录。路由器模块将通过使用`<BrowserRouter>`组件包装路由来保存历史记录。
+     3.通过仅添加特定的路由器模块（Web，核心或本机）来减小应用程序的大小
 
    **[⬆ Back to Top](#table-of-contents)**
     
-231. ### Can you describe about componentDidCatch lifecycle method signature?
-     The **componentDidCatch** lifecycle method is invoked after an error has been thrown by a descendant component. The method receives two parameters,
-     1. error: - The error object which was thrown
-     2. info: - An object with a componentStack key contains the information about which component threw the error.
+231. ### 您能描述一下componentDidCatch生命周期方法签名吗？
+     后代组件引发错误后，将调用**componentDidCatch**生命周期方法。该方法接收两个参数，
+     1. error：-引发的错误对象
+     2. info：-具有componentStack键的对象包含有关哪个组件引发错误的信息。
 
-     The method structure would be as follows
+     方法结构如下
      ```javascript
      componentDidCatch(error, info)
      ```
 
    **[⬆ Back to Top](#table-of-contents)**
     
-232. ### In which scenarios error boundaries do not catch errors?
-     Below are the cases in which error boundaries doesn't work,
+232. ### 在哪些情况下错误边界不会捕获错误？
+    以下是错误边界无效的情况，
 
-     1. Inside Event handlers
-     2. Asynchronous code using **setTimeout or requestAnimationFrame** callbacks
-     3. During Server side rendering
-     4. When errors thrown in the error boundary code itself
+     1.内部事件处理程序
+     2.使用**setTimeout或requestAnimationFrame**回调的异步代码
+     3.在服务器端渲染期间
+     4.在错误边界代码本身中引发错误时
 
    **[⬆ Back to Top](#table-of-contents)**
     
-233. ### Why do not you need error boundaries for event handlers?
-     Error boundaries do not catch errors inside event handlers. Event handlers don't happened or invoked during rendering time unlike render method or lifecycle methods. So React knows how to recover these kind of errors in event handlers.
-     If still you need to catch an error inside event handler, use the regular JavaScript try / catch statement as below
+233. ### 为什么您不需要事件处理程序的错误边界？
+    错误边界不会捕获事件处理程序内部的错误。与渲染方法或生命周期方法不同，事件处理程序在渲染期间不会发生或调用。因此，React知道如何在事件处理程序中恢复此类错误。
+     如果仍然需要在事件处理程序中捕获错误，请使用常规的JavaScript try / catch语句，如下所示
 
      ```javascript
      class MyComponent extends React.Component {
@@ -5017,14 +5017,13 @@
        }
      }
      ```
-     The above code is catching the error using vanilla javascript try/catch block instead of error boundaries.
-
+   上面的代码使用香草javascript try / catch块而不是错误边界来捕获错误。
    **[⬆ Back to Top](#table-of-contents)**
     
-234. ### What is the difference between try catch block and error boundaries?
-     Try catch block works with imperative code whereas error boundaries are meant for declarative code to render on the screen.
+234. ### try catch块和错误边界之间有什么区别？
+     尝试catch块适用于命令式代码，而错误边界则用于将声明式代码呈现在屏幕上。
 
-     For example, the try catch block used for below imperative code
+     例如，try catch块用于以下命令代码
      ```javascript
      try {
        showButton();
@@ -5032,62 +5031,62 @@
        // ...
      }
      ```
-     Whereas error boundaries wrap declarative code as below,
+    错误边界包裹了如下声明性代码，
      ```javascript
      <ErrorBoundary>
        <MyComponent />
      </ErrorBoundary>
      ```
-     So if an error occurs in a **componentDidUpdate** method caused by a **setState** somewhere deep in the tree, it will still correctly propagate to the closest error boundary.
+   因此，如果在树深处的**setState**引起的**componentDidUpdate**方法中发生错误，它仍将正确传播到最近的错误边界。
 
 
    **[⬆ Back to Top](#table-of-contents)**
     
-235. ### What is the behavior of uncaught errors in react 16?
-     In React 16, errors that were not caught by any error boundary will result in unmounting of the whole React component tree. The reason behind this decision is that it is worse to leave corrupted UI in place than to completely remove it. For example, it is worse for a payments app to display a wrong amount than to render nothing.
+235. ### React 16中未捕获的错误的行为是什么？
+     在React 16中，没有被任何错误边界捕获的错误将导致整个React组件树的卸载。做出此决定的原因是，将损坏的UI留在原处比完全删除它更糟。例如，对于付款应用而言，显示错误的金额要比什么都不呈现更糟糕。
 
    **[⬆ Back to Top](#table-of-contents)**
     
-236. ### What is the proper placement for error boundaries?
-     The granularity of error boundaries usage is up to the developer based on project needs. You can follow either of these approaches,
-     1. You can wrap top-level route components to display a generic error message for the entire application.
-     2. You can also wrap individual components in an error boundary to protect them from crashing the rest of the application.
+236. ### 错误边界的正确位置是什么？
+     错误边界用法的粒度取决于开发人员根据项目的需求。您可以采用以下两种方法之一，
+     1.您可以包装顶级路由组件以显示整个应用程序的一般错误消息。
+     2.您还可以将单个组件包装在错误边界中，以防止它们崩溃。
 
    **[⬆ Back to Top](#table-of-contents)**
     
-237. ### What is the benefit of component stack trace from error boundary?
-     Apart from error messages and javascript stack, React16 will display the component stack trace with file names and line numbers using error boundary concept.
+237. ### 从错误边界跟踪组件堆栈有什么好处？
+    除了错误消息和JavaScript堆栈，React16还将使用错误边界概念显示组件堆栈跟踪以及文件名和行号。
 
-     For example, BuggyCounter component displays the component stack trace as below,
+     例如，BuggyCounter组件显示如下的组件堆栈跟踪，
 
      ![stacktrace](images/error_boundary.png)
 
 
    **[⬆ Back to Top](#table-of-contents)**
     
-238. ### What is the required method to be defined for a class component?
-     The `render()` method is the only required method in a class component. i.e, All methods other than render method are optional for a class component.
+238. ### 为类组件定义所需的方法是什么？
+     `render()`方法是类组件中唯一需要的方法。即，除render方法外，所有方法对于类组件都是可选的。
 
    **[⬆ Back to Top](#table-of-contents)**
     
-239. ### What are the possible return types of render method?
-     Below are the list of following types used and return from render method,
+239. ### 渲染方法的可能返回类型是什么？
+     以下是使用的以下类型以及从render方法返回的类型的列表：
 
-     1. **React elements:** Elements that instruct React to render a DOM node. It includes html elements such as `<div/>` and user defined elements.
-     2. **Arrays and fragments:** Return multiple elements to render as Arrays and Fragments to wrap multiple elements
-     3. **Portals:** Render children into a different DOM subtree.
-     4. **String and numbers:** Render both Strings and Numbers as text nodes in the DOM
-     5. **Booleans or null:** Doesn't render anything but these types are used to conditionally render content.
+     1. **React元素：**指示React渲染DOM节点的元素。它包含html元素（如`<div />`和用户定义的元素）。
+     2. **数组和片段：**返回多个元素以渲染为数组和片段以包装多个元素
+     3. **Portals：**将子级渲染到另一个DOM子树中。
+     4. **字符串和数字：**将字符串和数字都渲染为DOM中的文本节点
+     5. **布尔值或null：**不渲染任何东西，但这些类型用于有条件地渲染内容。
 
 
    **[⬆ Back to Top](#table-of-contents)**
     
-240. ### What is the main purpose of constructor?
-     The constructor is mainly used for two purposes,
+240. ### 构造函数的主要目的是什么？
+    构造函数主要用于两个目的，
 
-     1. To initialize local state by assigning object to this.state
-     2. For binding event handler methods to the instance
-     For example, the below code covers both the above cases,
+     1.通过将对象分配给this.state来初始化本地状态
+     2.用于将事件处理程序方法绑定到实例
+     例如，以下代码涵盖了以上两种情况，
      ```javascript
      constructor(props) {
        super(props);
@@ -5099,15 +5098,15 @@
 
    **[⬆ Back to Top](#table-of-contents)**
     
-241. ### Is it mandatory to define constructor for React component?
-     No, it is not mandatory. i.e, If you don’t initialize state and you don’t bind methods, you don’t need to implement a constructor for your React component.
+241. ### 是否必须为React组件定义构造函数？
+    不，不是强制性的。也就是说，如果您不初始化状态并且不绑定方法，则无需为React组件实现构造函数。
 
    **[⬆ Back to Top](#table-of-contents)**
     
-242. ### What are default props?
-     The defaultProps are defined as a property on the component class to set the default props for the class. This is used for undefined props, but not for null props.
+242. ### 什么是默认props？
+     defaultProps定义为组件类的属性，以设置该类的默认props。用于未定义的props，但不用于空props。
 
-     For example, let us create color default prop for the button component,
+     例如，让我们为按钮组件创建颜色默认props，
 
      ```javascript
      class MyButton extends React.Component {
@@ -5120,29 +5119,29 @@
 
      ```
 
-     If props.color is not provided then it will set the default value to 'red'. i.e, Whenever you try to access the color prop it uses default value
+    如果未提供props.color，则它将默认值设置为'red'。即，无论何时您尝试访问颜色props，它都会使用默认值
      ```javascript
      render() {
         return <MyButton /> ; // props.color will be set to red
       }
      ```
-     **Note:** If you provide null value then it remains null value.
+     **注意：**如果您提供空值，那么它将保持为空值。
 
    **[⬆ Back to Top](#table-of-contents)**
     
-243. ### Why should not call setState in componentWillUnmount?
-     You should not call `setState()` in `componentWillUnmount()` because once a component instance is unmounted, it will never be mounted again.
+243. ### 为什么不应该在componentWillUnmount中调用setState？
+    您不应在`componentWillUnmount()`中调用`setState()`，因为一旦卸载了组件实例，就永远不会再次安装它。
 
    **[⬆ Back to Top](#table-of-contents)**
     
-244. ### What is the purpose of getDerivedStateFromError?
-     This lifecycle method is invoked after an error has been thrown by a descendant component. It receives the error that was thrown as a parameter and should return a value to update state.
+244. ### getDerivedStateFromError的目的是什么？
+     后代组件引发错误后，将调用此生命周期方法。它接收作为参数抛出的错误，并且应返回值以更新状态。
 
-     The signature of the lifecycle method is as follows,
+     生命周期方法的签名如下：
      ```javascript
      static getDerivedStateFromError(error)
      ```
-     Let us take error boundary use case with the above lifecycle method for demonistration purpose,
+    为了演示的目的，让我们使用上述生命周期方法来处理错误边界用例，
      ```javascript
      class ErrorBoundary extends React.Component {
        constructor(props) {
@@ -5168,8 +5167,8 @@
 
    **[⬆ Back to Top](#table-of-contents)**
     
-245. ### What is the methods order when component re-rendered?
-     An update can be caused by changes to props or state. The below methods are called in the following order when a component is being re-rendered.
+245. ### 重新渲染组件时方法的顺序是什么？
+    更新可能是由于prop或state的更改引起的。重新渲染组件时，将按以下顺序调用以下方法。
 
      1. static getDerivedStateFromProps()
      2. shouldComponentUpdate()
@@ -5180,18 +5179,18 @@
 
    **[⬆ Back to Top](#table-of-contents)**
     
-246. ### What are the methods invoked during error handling?
-     Below methods are called when there is an error during rendering, in a lifecycle method, or in the constructor of any child component.
+246. ### 错误处理期间调用了哪些方法？
+   在渲染期间，生命周期方法或任何子组件的构造函数中存在错误时，将调用以下方法。
 
      1. static getDerivedStateFromError()
      2. componentDidCatch()
 
    **[⬆ Back to Top](#table-of-contents)**
     
-247. ### What is the purpose of displayName class property?
-     The displayName string is used in debugging messages. Usually, you don’t need to set it explicitly because it’s inferred from the name of the function or class that defines the component. You might want to set it explicitly if you want to display a different name for debugging purposes or when you create a higher-order component.
+247. ### displayName类属性的用途是什么？
+     displayName字符串用于调试消息。通常，您不需要显式设置它，因为它是从定义组件的函数或类的名称推断出来的。如果要显示其他名称以进行调试或创建高阶组件时，可能需要显式设置它。
 
-     For example, To ease debugging, choose a display name that communicates that it’s the result of a withSubscription HOC.
+     例如，要简化调试，请选择一个显示名称，该显示名称表示withSubscription HOC的结果。
 
      ```javascript
      function withSubscription(WrappedComponent) {
@@ -5206,25 +5205,25 @@
 
    **[⬆ Back to Top](#table-of-contents)**
     
-248. ### What is the browser support for react applications?
-     React supports all popular browsers, including Internet Explorer 9 and above, although some polyfills are required for older browsers such as IE 9 and IE 10. If you use  **es5-shim and es5-sham** polyfill then it even support old browsers that doesn't support ES5 methods.
+248. ### 浏览器对React应用程序的支持是什么？
+    尽管老版本的浏览器（例如IE 9和IE 10）需要使用某些polyfill，但React支持所有流行的浏览器，包括Internet Explorer 9和更高版本。如果您使用**es5-shim和es5-sham** polyfill，那么它甚至支持旧的浏览器。不支持ES5方法。
 
    **[⬆ Back to Top](#table-of-contents)**
     
-249. ### What is the purpose of unmountComponentAtNode method?
-     This method is available from react-dom package and it removes a mounted React component from the DOM and clean up its event handlers and state. If no component was mounted in the container, calling this function does nothing. Returns true if a component was unmounted and false if there was no component to unmount.
+249. ### unmountComponentAtNode方法的目的是什么？
+     此方法可从react-dom包中获得，它从DOM中删除已安装的React组件，并清理其事件处理程序和状态。如果容器中未安装任何组件，则调用此函数不会执行任何操作。如果已卸载组件，则返回true；如果没有要卸载的组件，则返回false。
 
-     The method signature would be as follows,
+     方法签名如下：
      ```javascript
      ReactDOM.unmountComponentAtNode(container)
      ```
 
    **[⬆ Back to Top](#table-of-contents)**
     
-250. ### What is code-splitting?
-     Code-Splitting is a feature supported by bundlers like Webpack and Browserify which can create multiple bundles that can be dynamically loaded at runtime. The react project supports code splitting via dynamic import() feature.
+250. ### 什么是代码拆分？
+    代码拆分是Webpack和Browserify等捆绑软件支持的功能，可以创建多个捆绑软件，这些捆绑软件可以在运行时动态加载。 react项目通过动态import()功能支持代码拆分。
 
-     For example, in the below code snippets, it will make moduleA.js and all its unique dependencies as a separate chunk that only loads after the user clicks the 'Load' button.
+     例如，在下面的代码段中，它将使moduleA.js及其所有唯一依赖项作为一个单独的块，仅在用户单击“加载”按钮后才加载。
      **moduleA.js**
      ```javascript
      const moduleA = 'Hello';
@@ -5261,26 +5260,26 @@
 
    **[⬆ Back to Top](#table-of-contents)**
     
-251. ### What is the benefit of strict mode?
-     The <StrictMode> will be  helpful in the below cases
+251. ### 严格模式的好处是什么？
+     **<StrictMode>**在以下情况下会有所帮助
 
-     1. Identifying components with **unsafe lifecycle methods**.
-     2. Warning about **legacy string ref** API usage.
-     3. Detecting unexpected **side effects**.
-     4. Detecting **legacy context** API.
-     5. Warning about deprecated findDOMNode usage
+     1.使用**不安全的生命周期方法**识别组件。
+     2.关于**旧版字符串引用**API使用的警告。
+     3.检测出意外的**副作用**。
+     4.检测**旧版上下文** API。
+     5.关于不建议使用的findDOMNode使用情况的警告
 
    **[⬆ Back to Top](#table-of-contents)**
     
-252. ### What are Keyed Fragments?
-     The Fragments declared with the explicit <React.Fragment> syntax may have keys. The general use case is mapping a collection to an array of fragments as below,
+252. ### 什么是Keyed Fragments？
+     用显式`<React.Fragment>`语法声明的Fragment可能具有密钥。一般用例是将集合映射到片段数组，如下所示，
 
      ```javascript
      function Glossary(props) {
        return (
          <dl>
            {props.items.map(item => (
-             // Without the `key`, React will fire a key warning
+             // 如果没有`key`，React会发出关键警告
              <React.Fragment key={item.id}>
                <dt>{item.term}</dt>
                <dd>{item.description}</dd>
@@ -5291,67 +5290,66 @@
      }
      ```
 
-     **Note:** key is the only attribute that can be passed to Fragment. In the future, there might be a support for additional attributes, such as event handlers.
+    **注意：**键是唯一可以传递给Fragment的属性。将来，可能会支持其他属性，例如事件处理程序。
 
    **[⬆ Back to Top](#table-of-contents)**
     
-253. ### Does React support all HTML attributes?
-     As of React 16, both standard or custom DOM attributes are fully supported. Since React components often take both custom and DOM-related props, React uses the camelCase convention just like the DOM APIs.
+253. ### React是否支持所有HTML属性？
+     从React 16开始，完全支持标准或自定义DOM属性。由于React组件通常同时使用自定义和与DOM相关的道具，因此React与DOM API一样使用camelCase约定。
 
-     Let us take few props with respect to standard HTML attributes,
+     让我们针对标准HTML属性采取一些措施，
 
      ```javascript
      <div tabIndex="-1" />      // Just like node.tabIndex DOM API
      <div className="Button" /> // Just like node.className DOM API
      <input readOnly={true} />  // Just like node.readOnly DOM API
      ```
-     These props work similarly to the corresponding HTML attributes, with the exception of the special cases. It also support all SVG attributes.
+    除了特殊情况外，这些道具的工作方式与相应的HTML属性类似。它还支持所有SVG属性。
 
    **[⬆ Back to Top](#table-of-contents)**
     
-254. ### What are the limitations with HOCs?
+254. ### HOC的局限性是什么？
 
-     Higher-order components come with a few caveats apart from its benefits. Below are the few listed in an order,
-     1. **Don’t use HOCs inside the render method:**
-        It is not recommended to apply a HOC to a component within the render method of a component.
+   高阶组件除了具有一些优点外，还需要注意一些事项。以下是订单中列出的几个，
+     1. **请勿在render方法内使用HOC：**
+       不建议在组件的渲染方法中将HOC应用于组件。
         ```javascript
         render() {
-          // A new version of EnhancedComponent is created on every render
+          // 在每个渲染器上创建一个新版本的EnhancedComponent
           // EnhancedComponent1 !== EnhancedComponent2
           const EnhancedComponent = enhance(MyComponent);
-          // That causes the entire subtree to unmount/remount each time!
+          // 每次导致整个子树的卸载/重新安装！
           return <EnhancedComponent />;
         }
         ```
-        The above code impact performance by remounting a component that causes the state of that component and all of its children to be lost. Instead, apply HOCs outside the component definition so that the resulting component is created only once.
-
-     2. **Static methods must be copied over:**
-        When you apply a HOC to a component the new component does not have any of the static methods of the original component
+      上面的代码通过重新安装导致该组件及其所有子组件的状态丢失的组件来影响性能。相反，应在组件定义之外应用HOC，以便仅一次创建结果组件。
+     2. **静态方法必须复制以下内容：**
+      将HOC应用于组件时，新组件没有原始组件的任何静态方法
         ```javascript
-        // Define a static method
+        // 定义一个静态方法
         WrappedComponent.staticMethod = function() {/*...*/}
-        // Now apply a HOC
+        // 现在应用HOC
         const EnhancedComponent = enhance(WrappedComponent);
 
-        // The enhanced component has no static method
+        // 增强组件没有静态方法
         typeof EnhancedComponent.staticMethod === 'undefined' // true
         ```
-        You can overcome this by copying the methods onto the container before returning it,
+       您可以通过在返回容器之前将方法复制到容器中来解决此问题，
 
         ```javascript
         function enhance(WrappedComponent) {
           class Enhance extends React.Component {/*...*/}
-          // Must know exactly which method(s) to copy :(
+          // 必须确切知道要复制的方法：(
           Enhance.staticMethod = WrappedComponent.staticMethod;
           return Enhance;
         }
         ```
-     3. **Refs aren’t passed through:**
-        For HOCs you need to pass through all props to the wrapped component but this does not work for refs. This is because ref is not really a prop similar to key. In this case you need to use the React.forwardRef API
+     3. **参考未通过：**
+       对于HOC，您需要将所有props传递到包装的组件，但这不适用于引用。这是因为ref实际上不是与key相似的props。在这种情况下，您需要使用React.forwardRef API
 
    **[⬆ Back to Top](#table-of-contents)**
     
-255. ### How to debug forwardRefs in DevTools?
+255. ### 如何在DevTools中调试forwardRefs？
 
      **React.forwardRef** accepts a render function as parameter and DevTools uses this function to determine what to display for the ref forwarding component.
 
@@ -5396,34 +5394,34 @@
 
    **[⬆ Back to Top](#table-of-contents)**
     
-256. ### When component props defaults to true?
-     If you pass no value for a prop, it defaults to true. This behavior is available so that it matches the behavior of HTML.
+256. ### 组件属性何时默认为true？
+    如果您不传递属性值，则默认为true。此行为可用，以便它与HTML的行为相匹配。
 
-     For example, below expressions are equivalent,
+     例如，以下表达式是等效的，
 
      ```javascript
      <MyInput autocomplete />
 
      <MyInput autocomplete={true} />
      ```
-     **Note:** It is not recommended to use this approach because it can be confused with the ES6 object shorthand (example, `{name}` which is short for `{name: name}`)
+    **注意：**不建议使用此方法，因为它可能与ES6对象的简写方式混淆（例如，`{name}`是`{name：name}`的缩写）
 
    **[⬆ Back to Top](#table-of-contents)**
     
-257. ### What is NextJS and major features of it?
-     Next.js is a popular and lightweight framework for static and server‑rendered applications built with React. It also provides styling and routing solutions. Below are the major features provided by NextJS,
+257. ### 什么是NextJS及其主要功能？
+    Next.js是一个流行的轻量级框架，用于使用React构建的静态和服务器渲染应用程序。它还提供样式和路由解决方案。以下是NextJS提供的主要功能，
 
-     1. Server-rendered by default
-     2. Automatic code splitting for faster page loads
-     3. Simple client-side routing (page based)
-     4. Webpack-based dev environment which supports (HMR)
-     5. Able to implement with Express or any other Node.js HTTP server
-     6. Customizable with your own Babel and Webpack configurations
+     1.默认情况下由服务器渲染
+     2.自动代码拆分，以更快地加载页面
+     3.简单的客户端路由（基于页面）
+     4.支持（HMR）的基于Webpack的开发环境
+     5.可以用Express或任何其他Node.js HTTP服务器实现
+     6.使用您自己的Babel和Webpack配置可自定义
 
    **[⬆ Back to Top](#table-of-contents)**
     
-258. ### How do you pass an event handler to a component?
-     You can pass event handlers and other functions as props to child components. It can be used in child component as  below,
+258. ### 如何将事件处理程序传递给组件？
+    您可以将事件处理程序和其他函数作为props传递给子组件。可以在以下子组件中使用它，
 
      ```html
      <button onClick={this.handleClick}>
@@ -5431,8 +5429,8 @@
 
    **[⬆ Back to Top](#table-of-contents)**
     
-259. ### Is it good to use arrow functions in render methods?
-     Yes, You can use. It is often the easiest way to pass parameters to callback functions. But you need to optimize the performance while using it.
+259. ### 在渲染方法中使用箭头功能是否很好？
+     是的，您可以使用。通常，这是将参数传递给回调函数的最简单方法。但是您需要在使用时优化性能。
 
      ```javascript
      class Foo extends Component {
@@ -5445,36 +5443,36 @@
      }
      ```
 
-     **Note:** Using an arrow function in render method creates a new function each time the component renders, which may have performance implications
+     **注意：**每次渲染组件时，在render方法中使用箭头函数都会创建一个新函数，这可能会对性能产生影响
 
    **[⬆ Back to Top](#table-of-contents)**
     
-260. ### How to prevent a function from being called multiple times?
-     If you use an event handler such as **onClick or onScroll** and want to prevent the callback from being fired too quickly, then you can limit the rate at which callback is executed. This can be achieved in the below possible ways,
+260. ### 如何防止一个函数被多次调用？
+    如果您使用诸如**onClick或onScroll**之类的事件处理程序，并且希望防止触发回调的速度太快，则可以限制执行回调的速率。这可以通过以下可能的方式实现，
 
-     1. **Throttling:** Changes based on a time based frequency. For example, it can be used using _.throttle lodash function
-     2. **Debouncing:** Publish changes after a period of inactivity. For example, it can be used using _.debounce lodash function
-     3. **RequestAnimationFrame throttling:** Changes based on requestAnimationFrame. For example, it can be used using raf-schd lodash function
+     1. **节流：**基于时间的频率变化。例如，可以使用_.throttle lodash函数来使用它
+     2. **消抖：**一段时间不活动后发布更改。例如，可以使用_.debounce lodash函数来使用它
+     3. **RequestAnimationFrame节流：**根据requestAnimationFrame进行更改。例如，可以使用raf-schd lodash函数使用它
 
    **[⬆ Back to Top](#table-of-contents)**
     
-261. ### How JSX prevents Injection Attacks?
-     React DOM escapes any values embedded in JSX before rendering them. Thus it ensures that you can never inject anything that’s not explicitly written in your application. Everything is converted to a string before being rendered.
+261. ### JSX如何防止注入攻击？
+    在渲染它们之前，React DOM会转义JSX中嵌入的所有值。因此，它可以确保您永远不会注入未在应用程序中明确编写的任何内容。一切在呈现之前都会转换为字符串。
 
-     For example, you can embed user input as below,
+     例如，您可以如下嵌入用户输入，
 
      ```javascript
      const name = response.potentiallyMaliciousInput;
      const element = <h1>{name}</h1>;
      ```
-     This way you can prevent XSS(Cross-site-scripting) attacks in the application.
+     这样，您可以防止应用程序中的XSS（跨站点脚本）攻击。
 
    **[⬆ Back to Top](#table-of-contents)**
     
-262. ### How do you update rendered elements?
-     You can update UI(represented by rendered element) by passing the newly created element to ReactDOM's render method.
+262. ### 如何更新渲染的元素？
+     您可以通过将新创建的元素传递给ReactDOM的render方法来更新UI（由rendered元素表示）。
 
-     For example, lets take a ticking clock example, where it updates the time by calling render method multiple times,
+     例如，以一个滴答作响的时钟示例为例，它通过多次调用render方法来更新时间，           
 
      ```javascript
      function tick() {
@@ -5492,17 +5490,17 @@
 
    **[⬆ Back to Top](#table-of-contents)**
     
-263. ### How do you say that props are read only?
-     When you declare a component as a function or a class, it must never modify its own props.
+263. ### 您怎么说props是只读的？
+    当您将组件声明为函数或类时，它绝不能修改自己的props。
 
-     Let us take a below capital function,
+     让我们采用一个低于资本的函数，
 
      ```javascript
      function capital(amount, interest) {
         return amount + interest;
      }
      ```
-     The above function is called “pure” because it does not attempt to change their inputs, and always return the same result for the same inputs. Hence, React has a single rule saying "All React components must act like pure functions with respect to their props."
+    上面的函数称为“纯函数”，因为它不尝试更改其输入，并且始终为相同的输入返回相同的结果。因此，React有一条规则说：“就其道具而言，所有React组件都必须像纯函数一样工作”。
 
    **[⬆ Back to Top](#table-of-contents)**
     
