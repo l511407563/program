@@ -337,9 +337,10 @@
     所以有了容器
 
     有哪些容器：
-    1.有序，可重复(List)
-    2.无序，不可重复(Set)
-    3.键值对(Map)
+    0.数组(array)		 {}
+    1.有序，可重复(List)   []
+    2.无序，不可重复(Set)  {}
+    3.键值对(Map)	        {}
 
     collection<interface> -> Set<interface> -> HashSet
     特点：
